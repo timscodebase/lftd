@@ -1,19 +1,38 @@
 {
   "name": "lftd",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "Local First Todos with Pocketbase",
   "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "build:watch": "parcel build src/index.html --watch",
+    "pb": "./pocketbase serve",
+    "dev": "concurrently \"pnpm build\" \"pnpm pb\"",
+    "lint": "npx eslint .",
+    "format": "npx prettier . --check",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "local-first",
+    "local",
+    "first",
+    "todos",
+    "typescript",
+    "pocketbase",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Tim Smith <tim.smith.hdg@gmail.com>",
   "license": "ISC",
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
   "dependencies": {
-    "pouchdb": "^9.0.0",
-    "rxdb": "^15.33.0",
-    "rxjs": "^7.8.1"
+    "htmx.org": "2.0.2",
+    "pocketbase": "^0.21.5",
+    "prettier": "^3.3.3"
   },
   "devDependencies": {
     "husky": "^9.1.6",

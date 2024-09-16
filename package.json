@@ -1,0 +1,23 @@
+{
+  "name": "lftd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pouchdb": "^9.0.0",
+    "rxdb": "^15.33.0",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "parcel": "^2.12.0"
+  }
+}
